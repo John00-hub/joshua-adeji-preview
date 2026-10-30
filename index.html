@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joshua Adeji &amp; Co — Legal Practitioners | Ebute Metta, Lagos</title>
+<meta name="description" content="Joshua Adeji &amp; Co is a Lagos law firm at Ebute Metta advising individuals and businesses on litigation, corporate, property and family matters.">
+<style>
+  :root{
+    --ink:#101418; --paper:#F7F5F0; --card:#FFFFFF;
+    --blue:#13335B; --blue2:#1D4A82; --brass:#A8853B; --brass-hi:#C7A254;
+    --mut:#5B6572; --line:rgba(19,51,91,.14);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:Georgia,'Times New Roman',serif;background:var(--paper);color:var(--ink);line-height:1.65;}
+  .sans{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 22px;}
+
+  nav{position:sticky;top:0;z-index:50;background:rgba(247,245,240,.97);border-bottom:1px solid var(--line);backdrop-filter:blur(8px);}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;height:66px;}
+  .logo{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--ink);}
+  .logo-mark{width:40px;height:40px;background:var(--blue);color:#fff;border-radius:7px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;letter-spacing:.5px;border-bottom:3px solid var(--brass);}
+  .logo b{font-size:14.5px;letter-spacing:.1em;}
+  .logo small{display:block;font-size:9.5px;letter-spacing:.3em;color:var(--brass);text-transform:uppercase;}
+  .nav-links{display:flex;gap:24px;}
+  .nav-links a{color:var(--mut);text-decoration:none;font-size:13px;letter-spacing:.05em;text-transform:uppercase;}
+  .nav-links a:hover{color:var(--blue);}
+  @media(max-width:760px){.nav-links{display:none;}}
+
+  .hero{position:relative;padding:90px 0 70px;background:linear-gradient(170deg,var(--blue) 0%,var(--blue2) 60%,#2B5E9C 100%);color:#F4F7FB;}
+  .kick{display:inline-block;border:1px solid rgba(199,162,84,.5);color:var(--brass-hi);font-size:11px;letter-spacing:.28em;text-transform:uppercase;padding:7px 16px;border-radius:99px;margin-bottom:22px;background:rgba(199,162,84,.1);}
+  h1{font-size:clamp(30px,5vw,50px);line-height:1.15;font-weight:700;max-width:740px;}
+  h1 em{font-style:normal;color:var(--brass-hi);}
+  .lede{max-width:620px;color:#C9D6E6;font-size:17px;margin:20px 0 32px;}
+  .cta-row{display:flex;gap:14px;flex-wrap:wrap;}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;font-size:14.5px;padding:15px 30px;border-radius:8px;letter-spacing:.03em;}
+  .btn-brass{background:linear-gradient(160deg,var(--brass-hi),var(--brass) 60%,#7E6225);color:#15120A;box-shadow:0 6px 18px rgba(0,0,0,.25),inset 0 1px 0 rgba(255,255,255,.4);}
+  .btn-line{border:1px solid rgba(255,255,255,.4);color:#fff;background:rgba(255,255,255,.06);}
+  .hero-strip{margin-top:50px;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.18);border-radius:12px;overflow:hidden;}
+  .strip-cell{background:rgba(16,33,56,.55);padding:17px 18px;text-align:center;}
+  .strip-cell b{display:block;color:var(--brass-hi);font-size:15px;margin-bottom:3px;}
+  .strip-cell span{font-size:11.5px;color:#B9C8DB;text-transform:uppercase;letter-spacing:.06em;}
+  @media(max-width:640px){.hero-strip{grid-template-columns:1fr;}}
+
+  section{padding:72px 0;}
+  .sec-kick{color:var(--brass);font-size:11.5px;letter-spacing:.3em;text-transform:uppercase;margin-bottom:10px;}
+  h2{font-size:clamp(24px,3.4vw,33px);margin-bottom:14px;color:var(--blue);}
+  .sec-sub{color:var(--mut);max-width:620px;margin-bottom:38px;}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px;position:relative;box-shadow:0 2px 10px rgba(19,51,91,.05);}
+  .card.flag{border-top:4px solid var(--brass);}
+  .flag-tag{position:absolute;top:-12px;right:18px;background:var(--brass);color:#fff;font-size:10px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;padding:4px 12px;border-radius:99px;}
+  .card .ico{width:46px;height:46px;border-radius:10px;background:rgba(19,51,91,.07);display:flex;align-items:center;justify-content:center;margin-bottom:15px;font-size:21px;}
+  .card h3{font-size:17.5px;margin-bottom:8px;color:var(--blue);}
+  .card p{font-size:13.8px;color:var(--mut);}
+
+  .band{background:var(--blue);color:#EAF1F9;}
+  .band h2{color:#fff;}
+  .band .sec-sub{color:#B9C8DB;}
+  .why{display:grid;grid-template-columns:repeat(auto-fit,minmax(225px,1fr));gap:16px;}
+  .why div{border-left:3px solid var(--brass);padding:4px 0 4px 18px;}
+  .why b{display:block;font-size:15.5px;margin-bottom:5px;color:var(--brass-hi);}
+  .why p{font-size:13.5px;color:#C9D6E6;}
+
+  .quote{text-align:center;padding:62px 22px;}
+  .quote p{font-size:clamp(19px,2.7vw,25px);max-width:700px;margin:0 auto;font-style:italic;color:var(--blue);}
+  .quote small{display:block;margin-top:13px;color:var(--brass);letter-spacing:.22em;text-transform:uppercase;font-size:11px;}
+
+  .contact{background:#EFEBE2;border-top:1px solid var(--line);}
+  .c-grid{display:grid;grid-template-columns:1fr 1fr;gap:38px;}
+  @media(max-width:760px){.c-grid{grid-template-columns:1fr;}}
+  .c-item{margin-bottom:20px;}
+  .c-item b{display:block;color:var(--brass);font-size:12px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:4px;}
+  .c-item span,.c-item a{color:var(--ink);font-size:16px;text-decoration:none;}
+  .wa-box{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:30px;text-align:center;box-shadow:0 4px 18px rgba(19,51,91,.08);}
+  .wa-box h3{font-size:19px;margin-bottom:9px;color:var(--blue);}
+  .wa-box p{color:var(--mut);font-size:14px;margin-bottom:20px;}
+
+  footer{padding:32px 0 42px;background:var(--ink);color:#9AA6B5;}
+  .f-in{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center;}
+  .f-in small{font-size:12px;}
+  .disclaim{margin-top:16px;padding:13px 16px;border:1px dashed rgba(199,162,84,.5);border-radius:10px;font-size:11.5px;color:#9AA6B5;}
+  .disclaim b{color:var(--brass-hi);}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav-in">
+    <a class="logo" href="#top">
+      <span class="logo-mark">J·J</span>
+      <span><b>JOSHUA ADEJI &amp; CO</b><small>Legal Practitioners · Lagos</small></span>
+    </a>
+    <div class="nav-links sans">
+      <a href="#practice">Practice Areas</a>
+      <a href="#firm">The Firm</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <span class="kick sans">Ebute Metta · Lagos · Nigeria</span>
+    <h1>Corporate and commercial counsel with a <em>personal standard</em> of care.</h1>
+    <p class="lede sans">Joshua Adeji &amp; Co is a full-service Nigerian law practice with chambers at Ebute Metta, Lagos — advising individuals, families and businesses with thorough, commercially minded counsel.</p>
+    <div class="cta-row sans">
+      <a class="btn btn-brass" href="https://wa.me/2348101264288?text=Good%20day%2C%20Joshua%20Adeji%20and%20Co.%20I%20would%20like%20to%20brief%20the%20firm%20on%20a%20matter.">💬 Brief the Firm on WhatsApp</a>
+      <a class="btn btn-line" href="tel:+2348101264288">Call the Chambers</a>
+    </div>
+    <div class="hero-strip sans">
+      <div class="strip-cell"><b>Corporate &amp; Commercial</b><span>Flagship Practice</span></div>
+      <div class="strip-cell"><b>Dispute Resolution</b><span>Litigation · ADR</span></div>
+      <div class="strip-cell"><b>Property &amp; Probate</b><span>Lagos Mainland Focus</span></div>
+    </div>
+  </div>
+</header>
+
+<section id="practice">
+  <div class="wrap">
+    <p class="sec-kick sans">What We Do</p>
+    <h2>Practice Areas</h2>
+    <p class="sec-sub sans">A balanced bench for the matters Lagos businesses and families bring most — anchored by the firm's corporate and commercial practice.</p>
+    <div class="grid sans">
+      <div class="card flag">
+        <span class="flag-tag">Flagship</span>
+        <div class="ico">🏛️</div>
+        <h3>Civil &amp; Criminal Litigation</h3>
+        <p>Company formation and structuring, shareholder and partnership agreements, regulatory filings, contracts and the transactions that keep businesses moving.</p>
+      </div>
+      <div class="card">
+        <div class="ico">⚖️</div>
+        <h3>Corporate &amp; Commercial Law</h3>
+        <p>Firm, strategic representation before Lagos courts and tribunals — civil claims, commercial disputes, negotiation and alternative dispute resolution.</p>
+      </div>
+      <div class="card">
+        <div class="ico">🏠</div>
+        <h3>Property &amp; Real Estate</h3>
+        <p>Title verification and perfection, purchase and lease transactions, land documentation and due diligence across Lagos.</p>
+      </div>
+      <div class="card">
+        <div class="ico">📜</div>
+        <h3>Probate, Wills &amp; Estates</h3>
+        <p>Wills, letters of administration, estate planning and administration — handled with discretion and care for families.</p>
+      </div>
+      <div class="card">
+        <div class="ico">🤝</div>
+        <h3>Debt Recovery</h3>
+        <p>Structured recovery of commercial debts — demand, negotiation and enforcement, pursued firmly and professionally.</p>
+      </div>
+      <div class="card">
+        <div class="ico">📋</div>
+        <h3>Family &amp; Matrimonial Matters</h3>
+        <p>Ongoing counsel for SMEs and individuals — compliance, employment questions, documentation and everyday legal guidance.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="firm">
+  <div class="wrap">
+    <p class="sec-kick sans" style="color:var(--brass-hi);">The Firm</p>
+    <h2>Why Joshua Adeji &amp; Co</h2>
+    <p class="sec-sub sans">Chambers at 12 Apapa Road, Ebute Metta — serving Lagos Mainland businesses and families where they are.</p>
+    <div class="why sans">
+      <div><b>Partner-Led Matters</b><p>Every brief receives senior attention from start to finish.</p></div>
+      <div><b>Commercially Practical</b><p>Advice framed around outcomes, timelines and cost — not just the law report.</p></div>
+      <div><b>Mainland Rooted</b><p>Ebute Metta chambers, minutes from Yaba, Lagos Island and the courts.</p></div>
+      <div><b>Responsive by Design</b><p>Brief the firm on WhatsApp and get a structured response — fast.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="quote">
+  <p>"Counsel you can reach, advice you can act on — that is the practice we run."</p>
+  <small class="sans">Joshua Adeji &amp; Co</small>
+</div>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <p class="sec-kick sans">Get In Touch</p>
+    <h2>Brief the Chambers</h2>
+    <div class="c-grid" style="margin-top:30px;">
+      <div class="sans">
+        <div class="c-item"><b>Chambers</b><span>12 Apapa Road,<br>Ebute Metta, Lagos, Nigeria</span></div>
+        <div class="c-item"><b>Telephone</b><a href="tel:+2348101264288">0810 126 4288</a></div>
+        <div class="c-item"><b>Practice Hours</b><span>Monday – Friday · 9:00 AM – 5:00 PM</span></div>
+      </div>
+      <div class="wa-box sans">
+        <h3>Start a Confidential Conversation</h3>
+        <p>Outline your matter on WhatsApp and the firm will respond with next steps.</p>
+        <a class="btn btn-brass" href="https://wa.me/2348101264288?text=Good%20day%2C%20Joshua%20Adeji%20and%20Co.%20I%20would%20like%20to%20brief%20the%20firm%20on%20a%20matter.">💬 Chat with the Firm</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="f-in sans">
+      <small>© 2026 Joshua Adeji &amp; Co · Ebute Metta, Lagos</small>
+      <small>Litigation · Corporate · Property · Probate</small>
+    </div>
+    <div class="disclaim sans"><b>CONCEPT PREVIEW</b> — This is a design concept prepared for Joshua Adeji &amp; Co by Olamide (Legal Web Developer) to demonstrate the firm's proposed official website. Content is illustrative and subject to the firm's review and approval. Not yet the firm's official website.</div>
+  </div>
+</footer>
+
+</body>
+</html>
